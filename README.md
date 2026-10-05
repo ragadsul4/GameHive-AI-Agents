@@ -30,16 +30,21 @@ The goal is to move beyond simple prompt-response generation and create a struct
 - Automated Revision Gates
 - Self-Correction Pipeline
 - Interactive Game Design Interface
+- Gameplay System Generation
+- Level Progression Design
+- Structured Game Design Document Generation
 - Modular Python Architecture
 
 ---
-
 
 ## Demo
 
 Watch GameHive in action:
 
 [View Demo](https://drive.google.com/file/d/1MhXcEGDHTWvQQlZFzYvpy8g2MYnYK73f/view?usp=drive_link)
+
+---
+
 ## System Architecture
 
 ```text
@@ -93,11 +98,15 @@ The workflow allows each AI component to focus on a specific responsibility whil
 
 The main GameHive interface introduces the platform and provides a clear entry point into the AI-assisted game creation workflow.
 
+---
+
 ### Game Idea Input
 
 ![Game Idea Input](assets/game-idea-input.png)
 
 Users can submit a custom game concept or select from predefined prompts. This stage acts as the initial input layer for the multi-agent pipeline.
+
+---
 
 ### Multi-Agent Workflow
 
@@ -105,17 +114,45 @@ Users can submit a custom game concept or select from predefined prompts. This s
 
 The system orchestrates specialized AI agents for story generation, world building, gameplay design, claim routing, and verification within a structured workflow.
 
+---
+
 ### Narrative Generation
 
-![Generated Narrative](assets/narrative-output.png)
+![Generated Narrative](assets/generated-characters.png)
 
-GameHive generates a structured narrative foundation including the premise, central conflict, characters, and contextual elements derived from the original game idea.
+GameHive generates a structured narrative foundation including the premise, central conflict, story direction, and contextual elements derived from the original game idea.
+
+---
 
 ### Generated Characters
 
-![Generated Characters](assets/generated-characters.png)
+![Generated Characters](assets/narrative-output.png)
 
-The system produces structured character profiles with defined roles, motivations, and relationships aligned with the generated world and narrative.
+The system produces structured character profiles with defined roles, motivations, backgrounds, and relationships aligned with the generated world and narrative.
+
+---
+
+### Gameplay Design
+
+![GameHive Gameplay Design](assets/gameplay-design.png)
+
+GameHive translates the generated world and narrative into playable systems by defining the core gameplay loop, progression structure, resource management, player responsibilities, and long-term gameplay objectives.
+
+---
+
+### Level Progression
+
+![GameHive Level Progression](assets/level-progression.png)
+
+The system structures the game concept into progressive levels, defining key challenges, player focus, and design objectives for each stage of the experience.
+
+---
+
+### Final Game Design Document
+
+![GameHive Game Design Document](assets/game-design-document.png)
+
+The final output consolidates the generated story, characters, gameplay systems, level progression, verification results, and supporting information into a structured game design document.
 
 ---
 
@@ -176,7 +213,10 @@ gamehive-agents/
 │   ├── game-idea-input.png
 │   ├── agent-workflow.png
 │   ├── narrative-output.png
-│   └── generated-characters.png
+│   ├── generated-characters.png
+│   ├── gameplay-design.png
+│   ├── level-progression.png
+│   └── game-design-document.png
 │
 ├── app.py
 ├── main.py
@@ -193,7 +233,7 @@ gamehive-agents/
 Clone the repository:
 
 ```bash
-git clone https://github.com/Ragadsul4/gamehive-agents.git
+git clone https://github.com/ragadsul4/gamehive-agents.git
 ```
 
 Navigate to the project directory:
@@ -267,6 +307,9 @@ python main.py
 - Self-Correcting AI
 - Modular Software Architecture
 - AI Product Development
+- AI Product Design
+- Intelligent Content Generation
+- End-to-End AI Workflow Development
 
 ---
 
